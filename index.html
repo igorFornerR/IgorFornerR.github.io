@@ -1,32 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio web</title>
+    <style>
+        body {
+            background-color: #560BAD;
+        }
+        h1 {
+            font-family: monospace;
+            border: 3px solid #F72585;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #7209B7;
+        }
+        h3{
+            text-align: center;
+            border-top: 2px solid #F72585;
+            background-color: #3A0CA3;
+            height: max-content;
+            border-radius:5px;
+        }
+        #fotopessoal {
+            border-radius: 100%;
+            border: 1px solid black;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            filter: drop-shadow(5px 5px 20px #222);
+        }
+        #descricao {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style:normal;
+            text-align: center;
+        }
+        a {
+            color: #4361EE;
+            font-style: normal;
+        }
+        #lista_hab {
+            display: block;
+            padding-left: 45%;
+        }
+        #lista_blogs {
+            display: block;
+            padding-left: 45%;
+            line-height: normal;
+        }
+        #img_1{
+            display: inline-block;
+            border-radius: 100%;
+            border: 0.5px solid black;
+            margin-left: 5px;
+            vertical-align:bottom;
+            filter: drop-shadow(5px 5px 5px #222);
+        }
+        #img_2{
+            display: inline-block;
+            border-radius: 100%;
+            border: 0.5px solid black;
+            margin-left: 5px;
+            vertical-align:bottom;
+            filter: drop-shadow(5px 5px 5px #222);
+        }
+    </style>
 </head>
 
 <body>
+    <h3>Sumário</h3>
     <ul>
-        <li><a href="#descricao">Descricao</a></li>
+        <li><a href="#descricao">Descricão</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#blogs">Blogs recomendados</a></li>
     </ul>
     <h1>Igor Forner Rodrigues</h1>
-    <img src="./images/me.jpg" alt="Foto de Igor" width="200x" id="fotopessoal">
+    <img src="./images/me.jpg" alt="Foto de Igor" width="200x" id="fotopessoal" id="foto_pessoal">
     <p id='descricao'>Olá, sou o Igor, um apaixonado por aviação se aventurando por novos ares<br>Atualmente morando em <strong>Santa Maria RS</strong> cursando o curso de desenvolvimento web na <a href="https://www.betrybe.com/"target='_blank'>Trybe</a></p>
     <h3 id="habilidades">Habilidades a qual eu mais me orgulho</h3>
-    <ul>
+    <ul id="lista_hab">
         <li>Disciplina</li>
         <li>Comprometimento</li>
         <li>Empatia</li>
     </ul>
-        <br>
     <h3 id="blogs">Blogs recomendados</h3>
-    <ul>
-        <li><a href="https://diolinux.com.br/"target='_blank'>Diolinux</a></li>
-        <img src="./images/diolinux.png" alt="Logo Diolinux" width="75px">
+    <ul id="lista_blogs">
+        <li><a href="https://diolinux.com.br/" target="_blank">Diolinux</a><img src="./images/diolinux.png" alt="Logo Diolinux" width="20px"id="img_1"></li>
+        <li><a href="https://www.windowslatest.com/" target="_blank">Windows Latest</a><img src="./images/wlatest.png" alt="Logo windowslatest" width="20px" id="img_1"></li>
     </ul>
 </body>
 </html>
